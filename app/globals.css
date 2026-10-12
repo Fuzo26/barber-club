@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --gold: #d4af37;
+  --gold-light: #f3e5ab;
+  --gold-dark: #b8860b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  background-color: #0a0a0a;
+  color: #ededed;
+}
+
+body {
+  background-color: #0a0a0a !important;
+  color: #ededed !important;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Regras de segurança para dimensionamento rigoroso de SVGs e imagens */
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
